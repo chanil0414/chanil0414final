@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="nav.css">
+
+    <title></title>
+
+    <style >
+
+      a:link {
+        color: white; text-decoration: none ;
+      }
+      a:visited {
+        color: white; text-decoration: none ;
+      }
+      a:hover {
+        color: white; text-decoration: none ;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      footer {
+        padding: 1rem 0; /* rem 반응형 수정하기 */
+        background: #;
+        text-align: center;
+        color: #000000;
+      }
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+      @media screen and (min-width: 601px) {
+        div.example {
+          font-size: 80px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        div.example {
+          font-size: 30px;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+        <figure class="brand"><a href="index.html">Chanil Chung</a></figure>
+        <nav class="menu">
+            <ul>
+
+              <a href="Gallery.html"><li>Gallery</li></a>
+              <a href="Artist.html"><li>Artist Chan</li></a>
+              <a href="Contact_me.html"><li>Contact me</li></a>
+
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="text-align:center">Artist Chan</h2>
+    <div class="wrapper">
+      <div class="column">
+        <div class="card">
+          <img src="./image/contact_me.jpg" alt="Artist" style="width:100%">
+          <div class="container">
+            <h2>Chanil Chung</h2>
+            <p class="title">photographer</p>
+            <p>사진에 의미를 담고자 합니다.</p>
+            <p>mouthpiece@gmail.com</p>
+            <p><button class="button"><a href="Contact_me.html">Contact me</a></button></p>
+          </div>
+        </div>
+        <footer>
+            <div class="footer-content"></div>
+            <h3 class="footer-content">Chan_nuit</h3>
+            <p class="footer-content">about me</p>
+            <p class="footer-content">mouthpiece@gmail.com</p>
+            <p class="footer-content">Copyright 2021. CHANIL CHUNG inc. all rights reserved.</p>
+        </footer>
+      </div>
+  </body>
+</html>
